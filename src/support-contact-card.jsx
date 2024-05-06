@@ -14,8 +14,10 @@ export const SupportContactCard = ({ data }) => {
                 </div>
                 <div className='support-contact-item-info'>
                     <p>{data.name}</p>
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    <p>{data.email}</p>
+                    <div className='support-contact-item-info-mail'>
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <p>{data.email}</p>
+                    </div>
                     <p>{data.phone}</p>
                 </div>
             </div>

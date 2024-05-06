@@ -18,6 +18,7 @@
 .support-contact-item-initial {
     background-color: #f9cf03;
     width: 50px;
+    min-width: 50px;
     height: 50px;
     border-radius: 6px;
 }
@@ -47,7 +48,28 @@
     font-weight: bold;
 }
 
-.support-contact-item-info p:nth-child(3) {
+.support-contact-item-info-mail {
+    display: flex;
+}
+
+.support-contact-item-info-mail p:nth-child(2) {
     margin-left: 8px;
     margin-right: 16px;
+}
+
+@media (max-width: 670px) {
+    .support-contact {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .support-contact-item-info {
+        max-width: 200px;
+    }
+    .support-contact-item-info-mail {
+        flex-basis: 100%;
+    }
 }

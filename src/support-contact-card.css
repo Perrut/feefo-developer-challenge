@@ -1,0 +1,53 @@
+.support-contact {
+    width: 50%;
+    max-width: 50%;
+}
+
+.support-contact h4 {
+    color: #9f9d9d;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.support-contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.support-contact-item-initial {
+    background-color: #f9cf03;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.support-contact-item-initial p {
+    font-weight: bold;
+}
+
+.support-contact-item-info {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16px;
+}
+
+.support-contact-item-info p {
+    margin: 0;
+    text-align: left;
+}
+
+.support-contact-item-info * {
+    color: #606060;
+}
+
+.support-contact-item-info p:nth-child(1) {
+    flex-basis: 100%;
+    font-weight: bold;
+}
+
+.support-contact-item-info p:nth-child(3) {
+    margin-left: 8px;
+    margin-right: 16px;
+}

@@ -14,7 +14,7 @@ export const SalesOverview = ({ data }) => {
         <div className='sales-info'>
           <span style={{ cursor: 'pointer' }} title={`Last upload date: ${new Date(data.lastUploadDate)}`}><FontAwesomeIcon icon={faInfoCircle} /></span>
         </div>
-        <p>You had <strong>{data.uploads} uploads</strong> and <strong>{data.linesSaved}</strong> lines added.</p>
+        <p className='sales-summary'>You had <strong>{data.uploads} uploads</strong> and <strong>{data.linesSaved}</strong> lines added.</p>
       </div>
       <div className='sales-overview-percentage'>
         <p className='percentage-number'>{(data.successfulUploads / data.uploads * 100).toFixed(2)}%</p>

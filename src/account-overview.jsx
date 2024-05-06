@@ -1,7 +1,8 @@
 import React from 'react';
+import SupportContactCard from './support-contact-card';
+import SalesOverview from './sales-overview';
 
 import './account-overview.css';
-import SupportContactCard from './support-contact-card';
 
 export const AccountOverview = ({ data }) => {
   console.log(data);
@@ -9,7 +10,8 @@ export const AccountOverview = ({ data }) => {
   return (
     <div className="account-overview">
       <h1>Account Overview</h1>
-      <SupportContactCard data={data} />
+      <SupportContactCard data={data.supportContact} />
+      <SalesOverview data={data.salesOverview} />
     </div>
   )
 }

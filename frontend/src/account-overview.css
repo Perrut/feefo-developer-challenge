@@ -1,0 +1,28 @@
+.account-overview {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 40px;
+  padding-top: 20px;
+}
+
+.account-overview h1 {
+  color: #606060;
+  font-weight: 100;
+  width: 50%;
+  max-width: 50%;
+  text-align: left;
+}
+
+@media (max-width: 670px) {
+  .account-overview h1 {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
